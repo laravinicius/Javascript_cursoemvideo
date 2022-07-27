@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt(`Qual seu nome:`);
+        document.write(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br/>`); // mostrar quantos caracteres trem uma string 
+        document.write(`Seu nome em maiusculas fica <strong>${nome.toUpperCase()}</strong>.<br/>`);// mostrara a string toda em maisculo
+        document.write(`Seu nome em minusculas fica <strong>${nome.toLowerCase()}</strong>.<br/>`);// mostrara a string toda em minusculo
+
+
+        let n1 = 1545.5;
+        document.writeln(n1.toFixed(2)); // setar quantas casas ficam depois da virgula
+        document.write(n1.toFixed(2).replace('.', ',')); // substituir o . por , 
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})); //formatar para o padrão de moeda
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}));
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}));
+
+
+    </script>
+</body>
+</html>

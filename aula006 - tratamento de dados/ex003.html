@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando dados</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tratando as variaveis</h1>
+    <script>
+        // o prompt sempre recebe string
+        //number.parseInt serve para transformar string para numberInt
+        //number.parseFloat serve para transformar string para numberFloat
+        //number vai trasnformar para number independente se for int ou float
+
+        //string vai transformar de number para string
+        //var.toString vai transformar de number para string
+        let n1 = Number(window.prompt('Digite o 1 numero:')); 
+        let n2 = Number(window.prompt('Digite o 2 numero:'));
+        let s  = n1 + n2;
+        window.alert(`A soma entre ${n1} + ${n2}  é = ${s} `);
+    </script>
+    
+</body>
+</html>
