@@ -13,33 +13,86 @@
             width: 100px;
             font:normal normal 16pt segoe ui;
         }
+        #somar, #subtrair,#dividir, #multiplicar{
+            width: 200px;
+        }
         div#res{
             margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Somando valores</h1>
-    <input type="number" name="n1" id="i1"> +
-    <input type="number" name="n2" id="i2">
-    <input type="button" value="somar" id="somar">    
-    <div id="res">
-        Resultado:
+    <h1>Calculadora</h1>
+    <div>
+        <input type="number" name="n1Soma" id="i1Soma"> +
+        <input type="number" name="n2Soma" id="i2Soma">
+        <input type="button" value="somar" id="somar">
+        <div id="resSoma">Resultado:</div>
+    </div>
+    <div>
+        <input type="number" name="n1Sub" id="i1Sub"> +
+        <input type="number" name="n2Sub" id="i2Sub">
+        <input type="button" value="subtrair" id="subtrair">
+        <div id="resSub">Resultado:</div>
+    </div>
+    <div>
+        <input type="number" name="n1Multi" id="i1Multi"> +
+        <input type="number" name="n2Multi" id="i2Multi">
+        <input type="button" value="multiplicar" id="multiplicar">
+        <div id="resMulti">Resultado:</div>
+    </div>
+    <div>
+        <input type="number" name="n1Divi" id="i1Divi"> +
+        <input type="number" name="n2Divi" id="i2Divi">
+        <input type="button" value="dividir" id="dividir">
+        <div id="resDivi">Resultado:</div>
     </div>
 
     <script>
-        let s = document.getElementById(`somar`);
-        s.addEventListener(`click`, somar);
+        let soma = document.getElementById(`somar`);
+        soma.addEventListener(`click`, somar);
+        let sub = document.getElementById(`subtrair`);
+        sub.addEventListener(`click`, subtrair);
+        let multi = document.getElementById(`multiplicar`);
+        multi.addEventListener(`click`, multiplicar);
+        let divi = document.getElementById(`dividir`);
+        divi.addEventListener(`click`, dividir);
 
         function somar(){
-            let i1 = document.getElementById(`i1`);
-            let i2 = document.getElementById(`i2`);
-            let res = document.getElementById(`res`);
+            let i1 = document.getElementById(`i1Soma`);
+            let i2 = document.getElementById(`i2Soma`);
+            let res = document.getElementById(`resSoma`);
             let n1 = Number(i1.value);
             let n2 = Number(i2.value);
             let s = n1 + n2;
             res.innerHTML = `Resultado: <strong>${s}</strong>`;
-
+        }
+        function subtrair(){
+            let i1 = document.getElementById(`i1Sub`);
+            let i2 = document.getElementById(`i2Sub`);
+            let res = document.getElementById(`resSub`);
+            let n1 = Number(i1.value);
+            let n2 = Number(i2.value);
+            let s = n1 - n2;
+            res.innerHTML = `Resultado: <strong>${s}</strong>`;
+        }
+        function multiplicar(){
+            let i1 = document.getElementById(`i1Multi`);
+            let i2 = document.getElementById(`i2Multi`);
+            let res = document.getElementById(`resMulti`);
+            let n1 = Number(i1.value);
+            let n2 = Number(i2.value);
+            let s = n1 * n2;
+            res.innerHTML = `Resultado: <strong>${s}</strong>`;
+        }
+        function dividir(){
+            let i1 = document.getElementById(`i1Divi`);
+            let i2 = document.getElementById(`i2Divi`);
+            let res = document.getElementById(`resDivi`);
+            let n1 = Number(i1.value);
+            let n2 = Number(i2.value);
+            let s = n1 / n2;
+            res.innerHTML = `Resultado: <strong>${s}</strong>`;
         }
     </script>
 </body>
