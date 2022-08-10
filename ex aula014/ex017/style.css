@@ -25,6 +25,9 @@ section{
     box-shadow: 3px 3px 5px rgba(245, 245, 245, 0.219);
 
 }
+div#tabuada{
+    margin: 10px;
+}
 footer{
     font-style: italic;
     margin: 10px;
