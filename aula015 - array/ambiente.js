@@ -11,6 +11,9 @@ console.log(`Organizando em ordem crescente o vetor: ${num}`);
 
 console.log(`Quantas posições tem o vetor: ${num.length}`);
 
+console.log(num.indexOf(5)); // verificar a posição do valor
+
+
 
 
 
