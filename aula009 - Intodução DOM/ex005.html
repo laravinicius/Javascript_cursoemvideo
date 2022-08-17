@@ -25,14 +25,15 @@
     </p>
     <div id="msg">Clique em mim</div>
     <script>
-        // let corpo =  window.document.body;
-        // let p1 = window.document.getElementsByTagName(`p`)[1];
-        // let d = window.document.getElementById(`msg`);
-        // d.style.background = `green`;
-        // d.innerText = `Estou aguardando...`;
+        // selecionar objeto por tag name
+        let p1 = document.getElementsByTagName(`p`)[0]; // em [] é para escolher qual item vai ser escolhido
+        document.write(p1.innerText);
 
-        let d = window.document.querySelector(`div#msg`); // ID = #, CLASSE = .
+        let d = document.getElementById(`msg`);
         d.style.color = `blue`;
+
+        let i = document.querySelector(`div#msg`);
+        i.style.color = `green`;
 
     </script>
 </body>
