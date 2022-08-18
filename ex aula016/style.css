@@ -23,11 +23,13 @@ section{
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 5px rgba(245, 245, 245, 0.219);
+    text-align: center;
 
 }
 #idLista{
     width: 200px;
-    margin: 10px 0 10px 0;
+    display: block;
+    margin: 10px auto 10px auto;
 }
 footer{
     font-style: italic;
